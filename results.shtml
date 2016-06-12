@@ -1,0 +1,14 @@
+
+
+<div id="menu"><p>Your Vote Was Accepted</p>
+    <p><img id="liveResults" src="img/contestants/liveResults.png"></p>
+    <p><img id="voteAgain" src="img/contestants/voteAgain.png"></p>
+
+    <p>Remember You Get More Tickets By Purchasing Items From The Bar</p>
+    <p>You Can Also Purchase Tickets for $5 each</p>
+</div>
+
+<script src="javascript.js">
+
+</script>
+

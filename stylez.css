@@ -1,0 +1,232 @@
+html {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: black;
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    background-color: grey;
+}
+
+#shell {
+    width: 100%;
+    height:100vh;
+    background-color: black;
+    box-shadow:0 0 5px orange;
+}
+
+#header {
+    width: 90%;
+    height: 20%;
+    margin:auto;
+    background-image: url("img/youVote.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+#content {
+    width: 90%;
+    height: 75%;
+    background-color: transparent;
+    margin:auto;
+    box-shadow: 0 0 20px blue;
+    padding:auto;
+    overflow:auto;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+#menu {
+    width:auto;
+    height:auto;
+    position:relative;
+    top:0;
+    left:50%;
+    background-color:transparent;
+    transform: translate(-50%);
+    color:white;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom:10px;
+
+}
+
+p.small {
+    color:white;
+    font-size:small;
+    text-align:center;
+    line-height:50%;
+}
+
+#menu ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    background-color:transparent;
+}
+
+#menu li {
+flex: 1;
+margin: 50px;
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 0 10px white, 0 0 20px blue;
+    background-color: #222222;
+}
+
+.conVotePage {
+    width:150px;
+    height:100px;
+    max-width:150px;
+    max-height:100px;
+    float:left;
+    margin:20px;
+}
+
+
+img:active {
+    background-color: #4d4d4d;
+    box-shadow: 0 0 10px black, 0 0 20px white;
+}
+
+.selected {
+    background-color: #4d4d4d;
+    box-shadow: 0 0 10px black, 0 0 20px white;
+}
+
+#footer {
+    width:90%;
+    height: auto;
+    margin:auto;
+    background-color:silver;
+    text-shadow: 0 1px 1px #4d4d4d;
+    color: #222;
+    font-size: 20px;
+    text-align:center;
+    padding:5px;
+}
+
+#contestants {
+    margin:20px;
+    width:50px;
+    height:50px;
+    position:absolute;
+    background-color:white;
+}
+label {
+    color:white;
+}
+
+#verify {
+    position:relative;
+    width:100%;
+    height:auto;
+    left:50%;
+    transform: translate(-50%);
+}
+#verify input {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    height:50px;
+    border-radius:10px;
+}
+
+ul {
+    list-style-type: none;
+}
+h1 {
+    text-align: center;
+}
+
+#results {
+    width:100%;
+    height:100%;
+    background-color: black;
+    box-shadow: 0 0 5px #4d4d4d;
+    border:1px;
+    padding: 2px;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px white;
+    color:red;
+    overflow:hidden;
+
+}
+
+#display {
+    display:flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+}
+
+.resultsWrapper {
+    width:auto;
+    height:auto;
+    overflow:hidden;
+    margin:5px;
+    padding:5px;
+    display:flex;
+}
+
+.resultsName {
+    width:205px;
+    height:75px;
+    align-content:flex-end;
+}
+
+.resultsGraphWrapper {
+    width:calc(100% - 210px);
+    height:75px;
+    background-color:white;
+    text-align:center;
+    margin-left:5px;
+    border-radius:20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.resultsGraph {
+    height:100%;
+    background-color:lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+    }
+
+p.resultsGraph {
+    padding: 20px;
+}
+
+.resultsImg {
+    width:200px;
+    height:75px;
+    background-color:transparent;
+    box-shadow: none;
+}
+
+.transform {
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%)
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.white {
+    color:white;
+}
+
+.center {
+    text-align:center;
+}

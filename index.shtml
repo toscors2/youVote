@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DATique</title>
+    <link rel=stylesheet href=styles.css />
+</head>
+<body>
+
+
+<div id=container>
+    <div id=header>
+
+            <div id=headerGraphic><img src="img/products/DATique.png" alt="" align=center></div>
+               <!-- todo add tagline back in -->
+            <div id="headerTagLine">an adult novelty company</div>
+
+    <div id=mainNavBar>
+            <div id="mainNav">
+            <ul>
+                <li onclick="change()">Home</li>
+                <li onclick="change()">About DATique</li>
+                <li onclick="change()">Contact DATique</li>
+                <li onclick="change()">New Product Ideas</li>
+                <li onclick="change()">Where to Find</li>
+            </ul>
+            </div>
+    </div>
+        </div>
+
+
+
+    <div id=content>
+
+    <!-- todo add facebook plugin -->
+        <div id="sideBar">
+            <div id=sideNav>
+                <ul>
+                    <li><img id="collars" src="img/categories/collars.png" onclick="change()"><!--</a>--></li>
+                    <li><img id="cockRings" src="img/categories/cockRings.png" onclick="change()"></li>
+                    <li><img id="cuffs" src="img/categories/cuffs.png" onclick="change()"></li>
+                    <li><img id="dildos" src="img/categories/dildos.png" onclick="change()"></li>
+                    <li><img id="massagers" src="img/categories/massagers.png" onclick="change()"></li>
+                    <li><img id="masturbators" src="img/categories/masturbators.png" onclick="change()"></li>
+                    <li><img id="plugs" src="img/categories/plugs.png" onclick="change()"></li>
+                    <li><img id="pumps" src="img/categories/pumps.png" onclick="change()"></li>
+                    <li><img id="swings" src="img/categories/swings.png" onclick="change()"></li>
+                    <li><img id="vibrators" src="img/categories/vibrators.png" onclick="change()"></li>
+
+
+            </div>
+        </div>
+        <div id=productWindow><!--#include file = "aboutUs.html"--></div>
+
+    </div>
+
+</div>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+    function change() {
+        $('#productWindow').load('comingSoon.html');
+    }
+
+</script>
+</html>
